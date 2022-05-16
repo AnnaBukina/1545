@@ -1,4 +1,9 @@
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 /* Крок 1. аналізуємо щрифти, під'єднати шрифти з https: //fonts.google.com/, внести лінк в хед*/
 
 /*обнулити всі непотрібні автоматичні властивості */
@@ -24,7 +29,7 @@
 }
 
 .img-section {
-    padding: 50px;
+    margin: 50px;
 }
 
 body {
@@ -65,6 +70,15 @@ color: var(--accent-color);
     text-decoration:underline;
     text-align: center;
 
+}
+
+.subtitle-test {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
+    text-decoration: underline;
 }
 
 /* ----------------- ХЕДЕР --------------- */
@@ -109,10 +123,13 @@ color: var(--accent-color);
     font-weight: 900;
     font-size: 32px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--accent-color);
+
+    padding-top: 35px;
+    text-align: center;
+    
 }
 
 .hero-description {
@@ -123,14 +140,12 @@ color: var(--accent-color);
     letter-spacing: 0.03em;
     color: #757575;
     margin-right: 10px;
-    padding-top: 50px;
 }
 
 .hero {
-    margin-top: 50px;
-    padding-top: 50px;
+    margin-top: 70px;
     padding-bottom: 15px;
-    background-color: #f3f4f9;
+    background-color: rgb(255, 248, 220);
     /*background-image: url("../images/hero-bg.jpg");*/
     background-position: center;
     background-size: cover;
@@ -146,10 +161,12 @@ color: var(--accent-color);
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    align-items: center;
 }
 
 
-.internal-documents-list-link {
+.internal-documents-list-link,
+.education-documents-list-link  {
 font-weight: 700;
 font-size: 16px;
 line-height: 1.14;
@@ -157,7 +174,8 @@ letter-spacing: 0.03em;
 color: var(--main-color);
 }
 
-.internal-documents-list-description {
+.internal-documents-list-description,
+.education-documents-list-description {
 font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
@@ -165,39 +183,34 @@ letter-spacing: 0.03em;
 color: #757575;
 }
 
-
+.services {
+justify-content: space-around;
+}
 
 .text-container {
-padding: 50px;
+justify-content: space-around;
+}
 
+.text-container-test-light {
+padding: 40px;
 }
 
 /* ----------------- /Внутрішні документи --------------- */
 
 
-/* ----------------- Секція Презентаційні матеріали --------------- */
-.presentations-list-title {
-font-weight: 900;
-font-size: 18px;
-line-height: 1.8;
-letter-spacing: 0.04em;
-color: var(--accent-color);
+/* ----------------- Секція Навчальні матеріали --------------- */
 
-}
-.presentations-list-link {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    color: var(--main-color);
+.education-documents-container {
+    align-items: center;
+    background:rgb(255, 248, 220);}
+
+.education-documents-container-light {
+    align-items: center;
 }
 
-.presentations-list-description {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: #757575;
+.education-documents-list {
+    margin: 0px;
+    padding: 0px;
 }
 
 /* ----------------- /Секція Презентаційні матеріали --------------- */
@@ -218,24 +231,81 @@ color: var(--accent-color);
 
 /* ----------------- /Секція Чим займаємось --------------- */
 
-/* ----------------- Секція Команда --------------- */
+/* ----------------- Секція Новини --------------- */
+
+.news-section {
+    background-color: rgb(255, 248, 220);; 
+    /*width: 1380px;*/
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    
+}
+ 
 
 
-.team-list-name {
+.news-list {
+padding-left: 0px;
+display: flex;
+margin-left: 70px;
+flex-wrap: wrap; /*перенесення елементів на другу сточку в флекс контейнері - багаторядковий флекс */
+}
+
+.news-list-item {
+width: 300px;
+background-color: white;
+margin-right: 30px;
+margin-bottom: 30px;
+padding: 15px;
+border-radius: 12px;
+box-shadow: 10px 10px 20px;
+}
+
+/*тест з процентами розподілення обєму ентейнеру*/
+.news-list-item-test {
+    
+    background-color: white;
+    
+}
+
+/* кожному 4-му елементу у многострочному флексі відключити відступ */
+.news-list-item:nth-child(4n) {
+    margin-right: 0px;
+} 
+
+/* у трьох останніх елементах прибрати нижній відступ*/
+
+.news-list-item:nth-last-child(-n+2) {
+    margin-bottom: 0px;
+}
+
+.news-list-img {
+    margin-left: -15px;
+}
+
+
+.news-list-title, 
+.team-list-description {
+text-align: center;
+}
+.news-list-name {
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em; 
     font-weight: 500;
     color: var(--main-color);
 }
-.team-list-profession{
+.news-list-profession{
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
     font-weight: 400;
     color: #757575;
 }
-/* ----------------- /Секція Команда --------------- */
+/* ----------------- /Секція Новини --------------- */
 
 /* ----------------- Футер --------------- */
 .postal-address-link,
@@ -286,3 +356,31 @@ background-color: var(--accent-color);
 }
 
 /* ----------------- /Портфолио --------------- */
+
+
+
+
+/*.presentations-list-title {
+font-weight: 900;
+font-size: 18px;
+line-height: 1.8;
+letter-spacing: 0.04em;
+color: var(--accent-color);
+
+}
+.presentations-list-link {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
+}
+
+.presentations-list-description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+*/
