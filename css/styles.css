@@ -296,7 +296,7 @@ box-shadow: 10px 10px 20px;
 
 /* у трьох останніх елементах прибрати нижній відступ*/
 
-.news-list-item:nth-last-child(-n+2) {
+.news-list-item:nth-last-child(-n+3) {
     margin-bottom: 0px;
 }
 
