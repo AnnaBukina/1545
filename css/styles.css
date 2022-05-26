@@ -45,7 +45,7 @@ body {
     line-height: 1.19;
     letter-spacing: 0.03em;
 
-    position: absolute;
+    /*position: absolute;*/
     left: 40px;
     top: 18px;
 }
@@ -55,6 +55,7 @@ color: var(--accent-color);
 
 .logo-theme-light{
     color: var(--main-color);
+    display: inline-block;
 }
 
 .logo-theme-dark {
@@ -81,14 +82,31 @@ color: var(--accent-color);
     text-decoration: underline;
 }
 
+
+
 /* ----------------- ХЕДЕР --------------- */
 
+.navigation {
+    display: flex;
+    margin-top: 20px;
+}
+
+.menu {
+    display: flex;
+    margin-top: 1px;
+    margin-bottom: 0px;
+} 
+
+.menu-item {
+    margin-left: 50px;
+}
 .menu-link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--main-color);
+
 }
 .menu-link:hover,
 .menu-link:focus {
@@ -129,7 +147,7 @@ color: var(--accent-color);
 
     padding-top: 35px;
     text-align: center;
-    
+    margin: 0px;
 }
 
 .hero-description {
@@ -143,7 +161,6 @@ color: var(--accent-color);
 }
 
 .hero {
-    margin-top: 70px;
     padding-bottom: 15px;
     background-color: rgb(255, 248, 220);
     /*background-image: url("../images/hero-bg.jpg");*/
@@ -234,11 +251,12 @@ padding: 40px;
 /* ----------------- Секція Новини --------------- */
 
 .news-section {
-    background-color: rgb(255, 248, 220);; 
+    background-color: rgb(255, 248, 220);
     /*width: 1380px;*/
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 50px;
+    padding-top: 20px;
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
     align-items: center;
@@ -306,6 +324,38 @@ text-align: center;
     color: #757575;
 }
 /* ----------------- /Секція Новини --------------- */
+
+
+/* ----------------- Секція Фото змін --------------- */
+
+.photo-section {
+    background-size: cover;
+}
+
+.team-list {
+margin-top: 0px;
+margin-bottom: 0px;
+padding-bottom: 0px;
+padding-top: 20px;
+}
+
+
+.team-list-item {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.team-list-img {
+    
+    width: 1400 px;
+    background-color: rgb(148, 94, 94);
+    margin-right: 30px;
+    margin-bottom: 30px;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 10px 10px 20px #999898;
+    }
 
 /* ----------------- Футер --------------- */
 .postal-address-link,
