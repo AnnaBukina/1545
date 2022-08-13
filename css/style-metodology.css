@@ -145,6 +145,9 @@ a.com span {
 	margin:0 0 12px;
 	padding:8px 24px 0;
 }
+
+
+
 .content .sidebar {
 	padding:0;
 	float:right;
@@ -223,6 +226,8 @@ ul.ex_menu li a:hover {
 	padding:0;
 	float:left;
 }
+
+
 .fbg {
 	background:repeat center center;
 }
