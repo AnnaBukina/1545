@@ -360,6 +360,12 @@ padding-top: 20px;
     box-shadow: 10px 10px 20px #999898;
     }
 
+/* ----------------- Секція Мотивація --------------- */
+
+.property_img { [tabindex="0"] {
+            cursor: zoom-in;
+        }
+}
 
 
 
