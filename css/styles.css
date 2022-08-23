@@ -495,9 +495,10 @@ h2.podyaky-description {
     color: #676767;
 }
 
-span.acsent-color {
+ .listings ul li .property_details h1 a span.acsent-color {
     color: #2515bd;
 }
+
 
 .listings .more_listing {
     display: block;
