@@ -495,6 +495,10 @@ h2.podyaky-description {
     color: #676767;
 }
 
+span.acsent-color {
+    color: #2515bd;
+}
+
 .listings .more_listing {
     display: block;
     width: 100%;
@@ -582,14 +586,14 @@ h2.podyaky-description {
 .content_resize {
     margin: 0 auto;
     padding: 16px 0 24px;
-    width: 970px;
+    width: 1170px;
 }
 
 .content .mainbar {
     margin: 0;
     padding: 0;
     float: left;
-    width: 670px;
+    width: 870px;
 }
 
 .content .mainbar img {
