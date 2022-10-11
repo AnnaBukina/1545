@@ -533,7 +533,63 @@ h2.podyaky-description {
     border: 2px solid #a0c3e5;
 }
 
+/* ----------------- Секція Бібліотека --------------- */
 
+.books-section {
+    background-color: rgb(255, 248, 220);
+    /*width: 1380px;*/
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+
+}
+
+.books-list {
+    padding-left: 0px;
+    display: flex;
+    margin-left: 90px;
+    flex-wrap: wrap;
+    /*перенесення елементів на другу сточку в флекс контейнері - багаторядковий флекс */
+}
+
+.books-list-item {
+    width: 370px;
+    background-color: white;
+    margin-right: 50px;
+    margin-bottom: 30px;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 10px 10px 20px;
+}
+
+
+.books-list-img {
+    margin-left: -15px;
+    background-color: rgb(148, 94, 94);
+            margin-left: 35px;
+            padding: 10px;
+            border-radius: 12px;
+            box-shadow: 10px 10px 20px #999898;
+    
+}
+
+
+.books-list-title {
+    text-align: center;
+    color: rgb(148, 94, 94);
+}
+
+.books-list-link {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+}
 
 /* ----------------- Секція Методичка --------------- */
 .header-metodology,
